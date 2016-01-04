@@ -13,6 +13,8 @@ public class GameSettings : ScriptableObject
 
 	#region SETTINGS
 
+	// Base Map Flowing
+
 	public float MapFlowSpeed = 0.1F;
 
 	public float MapFlowAcceleration = 0;
@@ -22,6 +24,30 @@ public class GameSettings : ScriptableObject
 	public int MapResolutionCount = 25;
 
 	public int MapZOffsetbackCount = -2;
+
+	public float MapRotationFactor = 3.0F;
+
+	public float MapYHeight = 2.75F;
+
+
+	// Obstacle Generation
+
+
+	// Camera tilt
+
+	public float CameraTiltFactor;
+
+	public float CameraTranslationFactor;
+
+	public float CameraRecoveryRate = 0.66F;
+
+
+	// Player Pawn
+
+	public float PawnRotationFactor;
+
+	public float PawnRotationRecoveryRate = 0.66F;
+
 
 	#endregion
 

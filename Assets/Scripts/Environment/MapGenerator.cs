@@ -9,6 +9,8 @@ public class MapGenerator : MonoBehaviour
 
 	float m_Unit;
 
+	float m_PosY;
+
 	public MapPart BasePrefab;
 
 	void Start ()
@@ -25,6 +27,11 @@ public class MapGenerator : MonoBehaviour
 
 		m_ResolutionCount = GameSettings.Instance.MapResolutionCount;
 
+		m_PosY = GameSettings.Instance.MapYHeight;
+
+		Vector3 pos = transform.position;
+		pos.y = m_PosY;
+		transform.position = pos;
 
 		Generate ();
 	}
@@ -37,7 +44,7 @@ public class MapGenerator : MonoBehaviour
 
 			float initZ = (m_ZOffsetCount + i) * m_Unit;
 
-			part.transform.localPosition = new Vector3 (0, 0, initZ);
+			part.transform.localPosition = new Vector3 (0, m_PosY, initZ);
 
 			part.transform.SetParent (transform);
 

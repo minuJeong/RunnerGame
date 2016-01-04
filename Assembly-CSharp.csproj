@@ -45,8 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Core\CamControl.cs" />
+     <Compile Include="Assets\Scripts\Core\Game.cs" />
      <Compile Include="Assets\Scripts\Environment\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\Environment\MapPart.cs" />
+     <Compile Include="Assets\Scripts\Environment\Maps.cs" />
      <Compile Include="Assets\Scripts\PlayerPawn.cs" />
      <Compile Include="Assets\Scripts\Utility\GameSettings.cs" />
  <Reference Include="UnityEngine.UI">
