@@ -3,15 +3,17 @@ using System.Collections;
 
 public class MapGenerator : MonoBehaviour
 {
-	int m_ResolutionCount = 25;
+	public int m_ResolutionCount = 25;
 
-	int m_ZOffsetCount = -2;
+	public int m_ZOffsetCount = -2;
+
+	public MapPart BasePrefab;
+
 
 	float m_Unit;
 
 	float m_PosY;
 
-	public MapPart BasePrefab;
 
 	void Start ()
 	{

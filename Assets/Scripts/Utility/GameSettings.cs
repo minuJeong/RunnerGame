@@ -23,7 +23,7 @@ public class GameSettings : ScriptableObject
 
 	public int MapResolutionCount = 25;
 
-	public int MapZOffsetbackCount = -2;
+	public int MapZOffsetbackCount = -4;
 
 	public float MapRotationFactor = 3.0F;
 
